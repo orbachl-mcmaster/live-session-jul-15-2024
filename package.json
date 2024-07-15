@@ -1,0 +1,28 @@
+{
+  "name": "coffee-shop",
+  "version": "1.0.0",
+  "description": "Coffee shop - menu, place orders, deliver orders",
+  "main": "src/index.ts",
+  "scripts": {
+    "serve": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:dev": "vitest",
+    "lint": "eslint ./**/*.ts",
+    "lint-fix": "eslint --fix ./**/*.ts",
+    "check-types": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6",
+    "eslint": "^8",
+    "eslint-config-standard-with-typescript": "^43",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-promise": "^6",
+    "typescript": "^5",
+    "vitest": "^2"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.10"
+  }
+}
