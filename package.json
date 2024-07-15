@@ -5,8 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "serve": "tsx src/index.ts",
-    "test": "vitest run",
-    "test:dev": "vitest",
+    "test:ci": "vitest run",
+    "test": "vitest",
     "lint": "eslint ./**/*.ts",
     "lint-fix": "eslint --fix ./**/*.ts",
     "check-types": "tsc --noEmit"
