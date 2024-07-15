@@ -1,12 +1,12 @@
-function hello() {
-    return 'Hello'
+function hello (): string {
+  return 'Hello'
 }
 
 console.log(hello())
 
-if (import.meta.vitest) {
-    const { it, expect } = import.meta.vitest
-    it('says hello', () => {
-        expect(hello()).toBe('Hello')
-    })
-  }
+if (import.meta?.vitest !== undefined) {
+  const { it, expect } = import.meta.vitest
+  it('says hello', () => {
+    expect(hello()).toBe('Hello')
+  })
+}
